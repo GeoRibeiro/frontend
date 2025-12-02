@@ -13,7 +13,7 @@ async function login(){
         password
     }
 
-    const response = await fetch("http://localhost:3333/login",{
+    const response = await fetch("https://backend-puce-five-80.vercel.app/login",{
         method: "POST",
         headers: {
             "Content-Type": "application/json"

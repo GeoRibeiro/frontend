@@ -1,7 +1,7 @@
 async function buscarInfoBack(){
     const main = document.querySelector("main")
 
-    const persons = await fetch("http://localhost:3333/").then((response) => response.json())
+    const persons = await fetch("https://backend-puce-five-80.vercel.app/").then((response) => response.json())
     persons.map((person) =>{
         main.innerHTML += `
             <section id="${person.id}">
